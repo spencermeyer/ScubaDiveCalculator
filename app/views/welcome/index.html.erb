@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <!-- Latest compiled JavaScript -->
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <%=stylesheet_link_tag "application" %>
+  <link rel="shortcut icon" href="diver_diving_scuba.ico">
+</head>
+<body>
+<div class="container">
+
+<h1>Scuba Dive Air Calculator</h1>
+<h2>THIS IS WORK IN PROGRESS DO NOT USE</h2>
+<p>This is a handy calculator for air planning during your dive.</p>
+<p class="bg-warning">  Please do a backup manual calculation to check when you have planned your dive, do not rely on on-line tools!</p>
+<p>As you go deeper, the air you breath is more compressed.  For example, at 10 metres, the pressure is twice that at the surface, so if you breath 15 litres per minute at the surface you will breath 15 litres per minute at 10 metres but you are breathing what is 30 litres at the surface in a minute.</p>
+<table class="table table-striped">
+<tbody>
+<tr>
+<div class="row">
+  <td><div class="col-sm-3">Standard Air Comsumption</div></td>
+  <td><div class="col-sm-6">
+    <div class="form-group">
+      <label for="usr"></label>
+      <input type="text" class="form-control" id="sac">
+    </div>
+  </div></td>
+  <td><div class="col-sm-3">L/min</div></td>
+</div>
+</tr>
+<tr>
+<div class="row">
+  <td><div class="col-sm-3">Depth</div></td>
+  <td><div class="col-sm-6">
+    <div class="form-group">
+      <label for="usr"></label>
+      <input type="text" class="form-control" id="depth">
+    </div>
+  </div></td>
+  <td><div class="col-sm-3">m</div></td>
+</div>
+</tr>
+<div class="row">
+  <td><div class="col-sm-3">Duration</div></td>
+  <td><div class="col-sm-6">
+    <div class="form-group">
+      <label for="usr"></label>
+      <input type="text" class="form-control" id="duration">
+    </div>
+  </div></td>
+  <td><div class="col-sm-3">min</div></td>
+</div>
+<tr>
+<div class="row">
+  <td><div class="col-sm-3">
+    <button class="btn btn-default" id="calcBtn" type="submit">Calculate</button>
+  </div></td>
+  <td><div class="col-sm-6" id="consumption1">press calculate!
+  </div></td>
+  <td><div class="col-sm-3">Actual Litres Required</div></td>
+</div>
+</tr>
+<div class="row">
+  <td><div class="col-sm-3"></div></td>
+  <td><div class="col-sm-6" id="consumption2">press calculate!</div></td>
+  <td><div class="col-sm-3">Litres Required at 232 Bar</div></td>
+</div>
+</tr>
+</tr>
+<div class="row">
+  <td><div class="col-sm-3"></div></td>
+  <td><div class="col-sm-6" id="ppress">press calculate!</div></td>
+  <td><div class="col-sm-3">Partial Pressure O2, BarA</div></td>
+</div>
+</tr>
+
+</tbody>
+</table>
+
+
+
+</div>
+</body>
