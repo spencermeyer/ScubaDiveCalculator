@@ -8,6 +8,7 @@ $(document).ready(function() {
       sac1=document.getElementById('sac').value;
       depth1=document.getElementById('depth').value;
       duration1=document.getElementById('duration').value;
+      tank=document.getElementById('sel2').value;
       // Validation section
       if (sac1 < 12){
         alertVariable = alertVariable + "Your SAC cannot be below 12! ";
