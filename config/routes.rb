@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get 'nitrox/index'
+
+  get 'about/index'
+
   get 'deco/index'
 
   get 'welcome/index'

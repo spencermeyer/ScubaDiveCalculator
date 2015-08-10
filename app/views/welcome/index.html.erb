@@ -2,6 +2,9 @@
 <html>
 <head>
   <title></title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   <!-- jQuery library -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
@@ -17,10 +20,7 @@
 <div class="page-header">
 <h1>Scuba Dive Air Calculator</h1>
 </div>
-<h2>THIS IS WORK IN PROGRESS DO NOT USE</h2>
-<p>This is a handy calculator for air planning during your dive.</p>
-<p class="bg-warning">  Please do a backup manual calculation to check when you have planned your dive, do not rely on on-line tools!</p>
-<p>As you go deeper, the air you breath is more compressed.  For example, at 10 metres, the pressure is twice that at the surface, so if you breath 15 litres per minute at the surface you will breath 15 litres per minute at 10 metres but you are breathing what is 30 litres at the surface in a minute.</p>
+<h2>THIS IS WORK IN PROGRESS DO NOT USE 10 aug 2015</h2>
 <table class="table table-striped">
 <tbody>
 <tr>
