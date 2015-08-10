@@ -1,0 +1,2 @@
+module DecoHelper
+end
