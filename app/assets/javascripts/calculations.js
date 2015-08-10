@@ -2,6 +2,11 @@
 $(document).ready(function() {
     //do jQuery stuff when DOM is ready
     
+    // tooltips are the little labels that pop up when you hover over a button    
+    $(document).ready(function(){
+        $('[data-toggle="tooltip"]').tooltip(); 
+    });
+
     document.getElementById("calcBtn").addEventListener("click", function(){
       var alertVariable = "";
       var doCalc=true;
