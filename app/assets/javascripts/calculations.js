@@ -28,11 +28,13 @@ $(document).ready(function() {
       // Now do the calculations
       if(doCalc){
         sConsumption = sac1 * duration1 *(1+depth1*0.1);
-        bConsumption = sConsumption/232;
-        pPress = 0.2 * (1+(depth1*0.1));
+        bConsumption = (sConsumption/232).toFixed(4);
+        pPress = (0.2 * (1+(depth1*0.1))).toFixed(2);
+        reserve = 100*((tank - bConsumption) / tank).toFixed(2);
         document.getElementById("consumption1").innerHTML = sConsumption;
         document.getElementById("consumption2").innerHTML = bConsumption;
         document.getElementById("ppress").innerHTML = pPress;
+        document.getElementById("reserve").innerHTML = reserve;
       };
 
     });
