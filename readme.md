@@ -5,3 +5,6 @@ I have written this application on Rails as a single page app. I used twitter bo
 Some other features are:
 *an -onclick listener to start the calculations when the user clicks the calculate button.
 *reads values from text boxes in JS to provide data for the calculations then writes the results of the calculations into the results area of the sheet.
+
+This application can be found on line at:
+http://dive-planner.herokuapp.com/  
