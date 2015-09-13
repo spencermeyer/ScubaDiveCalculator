@@ -1,10 +1,21 @@
 // This is the JavaScript to do the calcualtions etc.
-$(document).ready(function() {
+
+    // Define in advance what happends when a different tank size is 
+    // selected.
+      function calcReserve(){
+        console.log("changed tank size");
+        tank=document.getElementById('sel2').value;
+        reserve = 100*((tank - bConsumption) / tank).toFixed(2);
+        document.getElementById("reserve").innerHTML = reserve;
+      };
+
+
+      $(document).ready(function() {
     //do jQuery stuff when DOM is ready
     
     // tooltips are the little labels that pop up when you hover over a button    
     $(document).ready(function(){
-        $('[data-toggle="tooltip"]').tooltip(); 
+      $('[data-toggle="tooltip"]').tooltip(); 
     });
 
     document.getElementById("calcBtn").addEventListener("click", function(){
@@ -43,4 +54,5 @@ $(document).ready(function() {
       };
 
     });
+// below is the end of the doc ready function
 });
