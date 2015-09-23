@@ -1,9 +1,19 @@
-<div class="container">
-<h1>Nitrox#index</h1>
-<p>The nitrox page is work in progress 10 aug 2015</p>
-</div>
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<!--<script src="nitrox.js"></script>  -->
+<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+<%= csrf_meta_tags %>
+<!-- all head stuff was added manually all is free game for deleting -->
+</head>
 
 <div class="container">
+<h1>Nitrox#index</h1>
+<p>The nitrox page is work in progress 23 sep 2015</p>
+<p><b>DO NOT USE</b></p>
+
 <table class="table table-striped">
 <tr>
   <div class="row">
@@ -14,7 +24,7 @@
         <input type="text" class="form-control" id="depth" value="20">
       </div>
     </div></td>
-    <td><div class="col-sm-3">m</div></td>
+    <td><div class="col-sm-3">Metres</div></td>
   </div>
 </tr>
 <tr>
@@ -26,7 +36,7 @@
         <input type="text" class="form-control" id="oxyconc" value="21">
       </div>
     </div></td>
-    <td><div class="col-sm-3">L/min</div></td>
+    <td><div class="col-sm-3">Percent %</div></td>
   </div>
 </tr>
 <tr>
@@ -36,8 +46,20 @@
     </div></td>
     <td><div class="col-sm-6" id="mod1">press calculate!
     </div></td>
-    <td><div class="col-sm-3">MOD</div></td>
+    <td><div class="col-sm-3">MOD (metres)</div></td>
   </div>
 </tr>
+<tr>
+  <div class="row">
+    <td><div class="col-sm-3">
+    </div></td>
+    <td><div class="col-sm-6" id="consumption1">press calculate!
+    </div></td>
+    <td><div class="col-sm-3">ppO2 (Bar) More than 1.4 is not recommended.</div></td>
+  </div>
+</tr>
+
+
 </table>
 </div>
+</html>
