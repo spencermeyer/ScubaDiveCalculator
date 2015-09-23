@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+gem 'rails_stdout_logging'
+gem 'rails_serve_static_assets'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.1'
