@@ -4,6 +4,7 @@
 $(document).ready ->
   # Initialization code goes here
   console.log "hello from coffeescript in nitrox coffee"
+  $('[data-toggle="tooltip"]').tooltip()
 
   $('#calcBtn2').on 'click', (event) =>
       console.log "calcButton2 pressed"
