@@ -4,9 +4,9 @@
 $(document).ready ->
   # Initialization code goes here
   console.log "hello from coffeescript in nitrox coffee"
-  $('[data-toggle="tooltip"]').tooltip()
-
-  $('#calcBtn2').on 'click', (event) =>
+#  $('[data-toggle="tooltip"]').tooltip()
+  
+  calcBtn2.addEventListener "click", (event) =>
       console.log "calcButton2 pressed"
       alertVariable = ""
       doCalc=true
@@ -24,8 +24,10 @@ $(document).ready ->
       if alertVariable != "" 
         alert alertVariable
       if doCalc
-        mod = 1.4/(oxyconc/100) * 10.toFixed
+        mod = 10*1.4/(oxyconc/100)
         document.getElementById("mod1").innerHTML = mod
+        ppo2 = 0.2*(1+depth1*0.1)
+        document.getElementById("ppo2").innerHTML = ppo2
 
 
 
