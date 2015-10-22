@@ -6,5 +6,10 @@ Some other features are:
 *an -onclick listener to start the calculations when the user clicks the calculate button.
 *reads values from text boxes in JS to provide data for the calculations then writes the results of the calculations into the results area of the sheet.
 
+removed:
+<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+from application.html.erb
+as I want to include page specific javascript.
+
 This application can be found on line at:
 http://dive-planner.herokuapp.com/  
