@@ -145,6 +145,7 @@ PLATFORMS
 DEPENDENCIES
   byebug
   coffee-rails (~> 4.1.0)
+  coffee-script
   jbuilder (~> 2.0)
   jquery-rails
   pg
