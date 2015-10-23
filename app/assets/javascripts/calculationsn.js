@@ -1,6 +1,6 @@
 // This is the JavaScript to do the calcualtions for NITROX etc.
 
-      $(document).ready(function() {
+    $(document).ready(function() {
     //do jQuery stuff when DOM is ready
     console.log("hello from nitrox.js doc ready");
 
@@ -32,10 +32,10 @@
         alert(alertVariable);
       }
       // Now do the calculations
-      if(doCalc){
-        mod = 1.4/(oxyconc/100) * 10.toFixed;
-        document.getElementById("mod1").innerHTML = mod;
-      };
+      //if(doCalc){
+      //  mod = 1.4/(oxyconc/100) * 10.toFixed;
+      //  document.getElementById("mod1").innerHTML = mod;
+      //};
 
     });
 // below is the end of the doc ready function

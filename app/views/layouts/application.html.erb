@@ -3,7 +3,6 @@
 <head>
   <title>DiveCalculator</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  
   <%= csrf_meta_tags %>
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   <!-- jQuery library -->
@@ -26,6 +25,7 @@
 </ul>
 </div>
 <%= yield %>
+<%= yield :head%>
 
 </body>
 </html>
