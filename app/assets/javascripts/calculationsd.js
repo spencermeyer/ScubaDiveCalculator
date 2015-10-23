@@ -1,15 +1,15 @@
-// This is the JavaScript to do the calcualtions for NITROX etc.
+// This is the JavaScript to do the calcualtions for DECO etc.
 
-    $(document).ready(function() {
-    //do jQuery stuff when DOM is ready
-    console.log("hello from nitrox.js doc ready");
+$(document).ready(function() {
+//do jQuery stuff when DOM is ready
+console.log("hello from deco.js doc ready");
 
     // tooltips are the little labels that pop up when you hover over a button    
     $(document).ready(function(){
       $('[data-toggle="tooltip"]').tooltip(); 
     });
 
-    document.getElementById("calcBtn2").addEventListener("click", function(){
+    document.getElementById("calcBtn3").addEventListener("click", function(){
       var alertVariable = "";
       console.log("nitroc calcs in progress");
       var doCalc=true;
@@ -31,14 +31,11 @@
         console.log(alertVariable);
         alert(alertVariable);
       }
-      // Now do the calculations
-      if(doCalc){
-        var ppo2 = 0.2*(1+depth1/10);
-        var mod = 10*1.2/(oxyconc/100);
-        document.getElementById("mod1").innerHTML = mod.toFixed(2);
-        document.getElementById("ppo2").innerHTML = ppo2.toFixed(2);
-      };
+    })
+})
 
-    });
-// below is the end of the doc ready function
-});
+
+
+
+
+
